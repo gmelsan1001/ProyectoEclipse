@@ -1,0 +1,27 @@
+package tema01;
+
+public class ExpresionAlg {
+
+	public static void main(String[] args) {
+
+    //a) El triple de un número N.
+	// 3*N
+	//b) La mitad de la última cifra de un número entero A.
+	// (A%10)/2
+	//c) Comprobar si la última cifra de un número entero N es par.
+	// (N%10)%2 = 0
+	//d) Comprobar si una variable A de tipo carácter contiene una letra mayúscula.
+	// A>='A' && A<='Z'
+	//e) Comprobar si el contenido de la variable N termina en 0 ó en 7.
+	// (N%10 == 0 || N%10 == 7)
+	//f) Comprobar si un número entero N de dos cifras es capicúa. 
+	//	Un número es capicúa si se puede leer igual de derecha a izquierda que de izquierda a derecha.
+	// 
+	//g) Quitarle a un número entero N su última cifra. Supondremos que N tiene más de una cifra.
+	//	Por ejemplo si N contiene el valor 123 después de la operación contendrá el valor 12.
+	// N/10
+	//h) Comprobar si una variable C de tipo char contiene un dígito. (Carácter entre 0 y 9)
+	// A>='A' && A<='Z' A>='0' && A<='9'
+	}
+
+}

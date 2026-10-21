@@ -1,0 +1,56 @@
+package tema02;
+
+import java.util.Scanner;
+
+public class DiadelaSemana {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		do {		
+		        System.out.println("\n1:Sumar, \n2: Restar, \n3: Multiplicar, \n4: Dividir, \n0: Salir");
+		        System.out.println("Qué operación quieres hacer?");
+		        int option = input.nextInt();
+		        double operador1, operador2;
+		        
+		        switch (option) {
+		        case 0:
+		        	salir = true;
+		        break;
+		        case 1:
+		        	System.out.println("\nIntroduce el primer sumando ->");
+		        	operador1 = input.nextInt();
+		        	System.out.println("\nIntroduce el segundo comando -> ");
+		        	operador2 = input.nextInt();
+		        	System.out.printf("\n%f + %f = %f", operador1, operador2, operador1 + operador2);
+		        break;
+		        case 2:
+		        	System.out.println("\nIntroduce el minuendo ->");
+		        	operador1 = input.nextInt();
+		        	System.out.println("\nIntroduce el sustraendo -> ");
+		        	operador2 = input.nextInt();
+		        	System.out.printf("\n%f - %f = %f", operador1, operador2, operador1 - operador2);
+		        break;
+		        case 3:
+		        	System.out.println("\nIntroduce el primer factor ->");
+		        	operador1 = input.nextInt();
+		        	System.out.println("\nIntroduce el segundo factor -> ");
+		        	operador2 = input.nextInt();
+		        	System.out.printf("\n%f x %f = %f", operador1, operador2, operador1 * operador2);
+		        break;
+		        case 4:
+		        	System.out.println("\nIntroduce el dividendo ->");
+		        	operador1 = input.nextInt();
+		        	System.out.println("\nIntroduce el divisor -> ");
+		        	operador2 = input.nextInt();
+		        	System.out.printf("\n%f / %f = %f", operador1, operador2, operador1 / operador2);
+		        break;
+		            if (0 == operador2) {
+		               System.out.println("No se puede dividir entre 0");
+		            } else {
+		            System.out.printf("\n%f / %f = %f", operador1, operador2, operador1 / operador2);
+		            }
+		            input.close();
+
+	}
+
+}

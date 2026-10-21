@@ -1,0 +1,22 @@
+package aceptaelreto;
+
+import java.util.Scanner;
+
+public class Id_223_Aprendiendo_a_multiplicar {
+
+	public static void main(String[] args) {
+	System.out.println("Cuántos números  vas a procesar?");
+	Scanner input = new Scanner(System.in);
+	int cantidad = input.nextInt();
+	System.out.printf("Introduce los %d números separados por espacios\n--", cantidad);
+	int suma = 0;
+	for (int index = 0; index < cantidad ; index++) {
+		int numActual = input.nextInt();
+		System.out.println(numActual);
+		suma += numActual;
+	 }
+	 input.close();
+     System.out.println(suma);
+	}
+
+}

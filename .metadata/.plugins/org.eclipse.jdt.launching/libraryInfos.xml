@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Users\USUARIO\Desktop\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822" version="25.0.4.1">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Program Files\Java\jdk-27" version="27"/>
+    <libraryInfo home="C:\Users\Germán\Downloads\jdk-27" version="27"/>
+    <libraryInfo home="C:\Users\Germán\AppData\Local\Temp\Rar$EXa2464.40207.rartemp\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822" version="25.0.4.1">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Users\USUARIO\Desktop\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822\jre" version="25.0.4.1"/>
+    <libraryInfo home="C:\Users\Germán\AppData\Local\Temp\Rar$EXa2464.40207.rartemp\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822\jre" version="25.0.4.1"/>
+    <libraryInfo home="C:\Program Files\Java\jre1.8.0_51" version="1.8.0_51">
+        <bootpath>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\resources.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\rt.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\jsse.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\jce.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\charsets.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\jfr.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\ext"/>
+            <entry path="C:\Windows\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\Java\jre1.8.0_51\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Users\Germán\Downloads\jdk-27\bin" version="27">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+</libraryInfos>

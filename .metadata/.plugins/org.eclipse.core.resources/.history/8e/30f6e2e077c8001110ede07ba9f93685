@@ -1,0 +1,49 @@
+package tema02;
+
+import java.util.Scanner;
+
+public class Capicua {
+    // f) Comprobar si un número entero N de cinco cifras es capicúa. 
+    // Un número es capicúa si se puede leer igual de derecha a izquierda que de izquierda a derecha.
+    public static void main(String[] args) {
+        int num;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Introduce el numero de cinco cifras, para comprobar si es capicúo:");
+        num = input.nextInt();
+
+        // ENFOQUE 1: EXTRACCIÓN MANUAL DE 5 DÍGITOS
+        
+        int digito1 = num / 10000;       // Obtiene la 1ª cifra (Decenas de millar)
+        int digito2 = (num / 1000) % 10; // Obtiene la 2ª cifra (Unidades de millar)
+        int digito3 = (num / 100) % 10;  // Obtiene la 3ª cifra (Centenas)
+        int digito4 = (num / 10) % 10;   // Obtiene la 4ª cifra (Decenas)
+        int digito5 = num % 10;          // Obtiene la 5ª cifra (Unidades)
+        
+        int acumuladorManual = (digito5 * 10000) + (digito4 * 1000) + (digito3 * 100) + (digito2 * 10) + digito1; // Le da la vuelta al num guardándolo en el acumuladormanual
+
+        // ENFOQUE 2: PROCESAMIENTO CON BUCLE WHILE
+        
+        int auxiliar = num; // Copia para no destruir el valor original de 'num'
+        int acumulador = 0; // Tu acumulador dinámico que arranca en 0
+        
+        while (auxiliar > 0) { // El bucle realiza el proceso de división cifra por cifra de forma automática
+            int ultimaCifra = auxiliar % 10; // Extrae el último dígito
+            
+            acumulador = (acumulador * 10) + ultimaCifra; // El acumulador se multiplica por 10 y añade la cifra extraída
+            
+            auxiliar = auxiliar / 10; // Elimina la última cifra procesada
+        }
+        // COMPROBACIÓN FINAL (Usando el acumulador del while)
+        
+        if (num == acumulador) {
+            System.out.println("Resultado: El número " + num + " SÍ es capicúo.");
+            System.out.println("Invertido con variables fijas: " + acumuladorManual);
+            System.out.println("Invertido con bucle while: " + acumulador);
+        } else {
+            System.out.println("Resultado: El número " + num + " NO es capicúo.");
+            System.out.println("Invertido con variables fijas: " + acumuladorManual);
+            System.out.println("Invertido con bucle while: " + acumulador);
+        }
+        input.close(); // Cierra el scanner para liberar recursos
+    }
+}

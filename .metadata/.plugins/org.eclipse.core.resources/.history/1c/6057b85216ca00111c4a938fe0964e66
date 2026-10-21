@@ -1,0 +1,33 @@
+package aceptaelreto;
+
+import java.util.Scanner;
+
+public class Id_165_Hyperpar {
+
+	public static void main(String[] args) {
+		System.out.println("Introduce un número para ver si es \"hyperpar\"");
+		Scanner input = new Scanner(System.in);
+		long num = input.nextLong();
+		input.close();
+		
+		long numAux = num;
+		boolean esHyperpar = true;
+		while (esHyperpar && numAux > 0) {
+			// obtener el último numero del numero aux actual
+			int ultimaCifra = (int) (numAux % 10);
+			// comprobar si ese número es par
+			if (ultimaCifra % 2 != 0) {
+				esHyperpar = false;
+			}
+			// rompemos el núm quitando su última cifra
+			//numAux = numAux / 10;
+			numAux /= 10;
+		}
+		if (esHyperpar) {
+			System.out.printf("El número %d es \"hyperpar\"", num);
+		} else {
+			System.out.printf("El número %d NO es \"hyperpar\"", num);			
+		}
+	}
+
+}
