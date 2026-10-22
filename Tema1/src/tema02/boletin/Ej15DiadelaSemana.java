@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Ej15DiadelaSemana {
 
+// Escribe un programa que pida por teclado un día de la semana (Lunes,
+// martes...) y que diga qué asignatura toca a primera hora ese día.	
+
 	public static void main(String[] args) {
 //		ESTRUCTURA TÍPICA DE VALIDACIÓN DE DATOS
 //		boolean correcto = false;

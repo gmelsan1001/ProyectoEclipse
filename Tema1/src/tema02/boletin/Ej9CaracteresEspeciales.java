@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Ej9CaracteresEspeciales {
 
+// Escribe un programa que pinte una pirámide rellena con un carácter
+// introducido por teclado que podrá ser una letra, un número o los símbolos
+// como *, +, € o $. El programa debe permitir al usuario mediante un menú elegir
+// si el vértice de la pirámide está apuntando hacia arriba, hacia abajo o hacia la derecha.	
+	
 	public static void main(String[] args) {
 			Scanner input = new Scanner(System.in);
 	        System.out.println("Introduce una letra, un número o un símbolo (*, +, € o $)");
@@ -40,5 +45,6 @@ public class Ej9CaracteresEspeciales {
 			} else {
 				System.out.println("El carácter introducido no es correcto y no se puede formar la pirámide");
 			}
+	        input.close();
 	}
 		}

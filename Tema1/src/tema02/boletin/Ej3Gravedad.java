@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Ej3Gravedad {
 
-//	Realiza un programa que calcule el tiempo que tardará en caer un objeto desde
-//	una altura h. Aplica la fórmula t = (Raízcuadrada) 2h/g siendo g = 9.81m/s²
+// Realiza un programa que calcule el tiempo que tardará en caer un objeto desde
+// una altura h. Aplica la fórmula t = (Raízcuadrada) 2h/g siendo g = 9.81m/s²
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
