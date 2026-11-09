@@ -13,7 +13,7 @@ public class ConteoVocales {
 	//	Te paso el primer problema:
 	//	Trabajar este ejercicio y entenderlo para el lunes.
 	public static void main(String[] args) {
-	  System.out.print("Introduce una frase: ");
+	  System.out.print("Introduce una vocal: ");
 	  Scanner input = new Scanner(System.in);
 	  String VOCALES = "aeiouAEIOUáéíóúÁÉÍÓÚüÜ";
 	  String texto = input.nextLine();
