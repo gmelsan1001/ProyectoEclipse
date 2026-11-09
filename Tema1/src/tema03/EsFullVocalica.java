@@ -22,7 +22,31 @@ public class EsFullVocalica {
         Scanner scan = new Scanner(System.in);
         String frase = scan.nextLine();
         String fraseMay = frase.toUpperCase();
-	}
+		int indice = 0;
+		boolean encontradoA = false;
+        boolean encontradoE = false;
+        boolean encontradoI = false;
+        boolean encontradoO = false;
+        boolean encontradoU = false;
+		while (indice < frase.length() &&  (!encontradoA || !encontradoE || !encontradoI || !encontradoO || !encontradoU)) {
+            String letra = String.valueOf(fraseMay.charAt(indice));
+		    if (letra.matches(patronVocales)) {
+        	if (letra.matches("[EÉ]")) {
+        	    encontradoE = true;
+				patronVocales.replace("E", "");
+        	    patronVocales.replace("É", "");
+            } else if (letra.matches("[AÁ]")) {
+            	encontradoA = true;
+            } else if (letra.matches("[OÓ]")) {
+            	encontradoO = true;
+        	} else if (letra.matches("[IÍ]")) {
+            	encontradoI = true;
+        	} else if (letra.matches("[UÚÜ]")) {
+            	encontradoU = true;
+            }
+	    indice++;
+      }
 
-	
+	}	
+}
 }
