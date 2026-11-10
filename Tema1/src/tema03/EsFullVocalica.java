@@ -47,6 +47,7 @@ public class EsFullVocalica {
 	            }
 	            indice++;
            }
-	   }	
+	   }
+	   scan.close();
    }
  }
