@@ -24,7 +24,7 @@ public class PalabraLargaCortaToCharArray {
             	palabraAux += caracter;
             }
 	    }
-        System.out.println("La palabra más larga de la frase es: " + larga);
-        System.out.println("y palabra más corta de la frase es: " + corta);
+		System.out.println("La palabra más larga de la frase es " + larga);
+		System.out.println("y la palabra más corta de la frase es " + corta);
     }
 }
