@@ -19,8 +19,8 @@ public class PalabraLargaCorta {
             } else if (palabra.length() < corta.length()) {
             	corta = palabra;
             }
-            
 	    }
-      	
+      	System.out.println("La palabra más larga de la frase es: " + larga);
+        System.out.println("y palabra más corta de la frase es: " + corta);
     }
 }
