@@ -27,6 +27,6 @@ public class ConteoVocales {
 	       contador++;
 		  }
 	  }
-	  System.out.println("La frase \%\  " + contador);
+	  System.out.println("La frase %\\  " + contador);
       }
 }
