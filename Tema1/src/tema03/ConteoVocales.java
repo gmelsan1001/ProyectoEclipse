@@ -13,21 +13,20 @@ public class ConteoVocales {
 	//	Te paso el primer problema:
 	//	Trabajar este ejercicio y entenderlo para el lunes.
 	public static void main(String[] args) {
-	  System.out.print("Inrtoduce una frase: ");
-	  Scanner input = new Scanner(System.in);
-	  String VOCALES = "aeiouAEIOUáéíóúÁÉÍÓÚüÜ";
-	  String texto = input.nextLine();
- 
+	  System.out.print("Introduce una frase para contar las vocales: ");
+	  Scanner scan = new Scanner(System.in);
+	  String frase = "aeiouAEIOUáéíóúÁÉÍÓÚüÜ";
+	  String fraseMay = frase.toUpperCase();
+      String patronVocales = "[AEIOUÁÉÍÓÚÜ]";
 	  int contador = 0;
-	  
-	  for (int i = 0; i < texto.length(); i++) {
-		  char letra = texto.charAt(i);
-		  if (VOCALES.indexOf(letra) != -1) {
+	  scan.close();
+	  //for extendido o foreach	
+	  for (char caracter: fraseMay.toCharArray()) {
+		  String letra = String.valueOf(caracter);
+		  if (letra.matches(patronVocales)) {
 	       contador++;
 		  }
 	  }
-	  System.out.println("El total de vocales es: " + contador);
-
-      input.close();
-}
+	  System.out.println("La frase \"%s\" tiene %d vocales" + contador);
+      }
 }
