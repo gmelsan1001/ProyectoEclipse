@@ -24,3 +24,4 @@ public class PalabraLargaCortaSplit {
 		System.out.println("y la palabra más corta de la frase es " + corta);
     }
 }
+}
