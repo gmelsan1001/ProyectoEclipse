@@ -30,4 +30,3 @@ public class ConteoVocales {
 	  System.out.println("La frase \"%s\" tiene %d vocales" + contador);
       }
 }
-}
