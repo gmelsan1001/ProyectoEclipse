@@ -51,7 +51,15 @@ public class UtilidadesCadenas {
     public static boolean esDigito (String num) {
     	return testRegex(num, "\\d");
     }
-    
+
+    /**
+     * 
+     * @param nombre
+     * @param ap1
+     * @param ap2
+     * @return
+     */
+	
     public static String nombreCompletoApellidos (String nombre, String ap1, String ap2) {
     	String nombreCompletoApellidos = nombre + ap1 + ap2;
     	return nombreCompletoApellidos;
