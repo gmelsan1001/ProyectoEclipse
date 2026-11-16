@@ -6,7 +6,7 @@ public class UtilidadesCadenas {
     /**
      * Devuelve el número de vocales existentes en una cadena de texto
      * @param cadena
-     * @return
+     * @return numVocales
      */
 	public static int cuentaVocales (String cadena) {
   	    int numVocales = 0;
