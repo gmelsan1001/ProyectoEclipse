@@ -35,4 +35,26 @@ public class UtilidadesCadenas {
     	String cadenaConCat = cad1 + " - " + cad2;
     	return cadenaConCat;
     }
+   
+	/**
+     * Devuelve verdadero si la cadena cumple el patrón de expresión regular
+     * @param cadena,  cualquier cadena
+     * @param patron, expresión regular "RegEx"
+     * @return cumple
+     */
+    
+    public static boolean testRegex (String cadena, String patron) {
+    	boolean cumple = cadena.matches(patron);
+    	return cumple;
+    }
+    
+    public static boolean esDigito (String num) {
+    	return testRegex(num, "\\d");
+    }
+    
+    public static String nombreCompletoApellidos (String nombre, String ap1, String ap2) {
+    	String nombreCompletoApellidos = nombre + ap1 + ap2;
+    	return nombreCompletoApellidos;
+    			
+    }
 }
