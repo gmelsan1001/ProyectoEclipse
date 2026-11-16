@@ -21,4 +21,18 @@ public class UtilidadesCadenas {
   	  }
     	return numVocales;
     }
+
+	/**
+	 * Recibe dos cadenas de texto y devuelve una cadena de texto que es la 
+	 * concatenación de las 2 anteriores separadas por un guión
+	 * 
+	 * @param cad1
+	 * @param cad2
+	 * @return cadenaConCat, la cadena resultado de concatenar
+	 */
+
+    public static String concatenaConGuion (String cad1, String cad2) {
+    	String cadenaConCat = cad1 + " - " + cad2;
+    	return cadenaConCat;
+    }
 }
