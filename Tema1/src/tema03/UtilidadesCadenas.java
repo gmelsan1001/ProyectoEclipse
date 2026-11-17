@@ -62,7 +62,7 @@ public class UtilidadesCadenas {
 	
     public static String nombreCompletoApellidos (String nombre, String ap1, String ap2) {
     	nombre = nombre.trim().toLowerCase().replace("\\s", "");
-    	String nombreCompletoApellidos = nombre + ap1 + ap2;
+    	String nombreCompletoApellidos = org.apache.commons.lang3.StringUtils.capitalize(nombre);
     	return nombreCompletoApellidos;
     }
 }
