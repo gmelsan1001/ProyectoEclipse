@@ -65,4 +65,8 @@ public class UtilidadesCadenas {
     	String Ej02Usuarios = org.apache.commons.lang3.StringUtils.capitalize(nombre);
     	return Ej02Usuarios;
     }
+
+	 public static boolean validarDni (String dni) { 
+        return testRegex(dni, "[0-9]{8}-?[a-hj-np-tv-zA-HJ-NP-TV-Z]");
+     }
 }
