@@ -60,9 +60,9 @@ public class UtilidadesCadenas {
      * @return
      */
 	
-    public static String nombreCompletoApellidos (String nombre, String ap1, String ap2) {
+    public static String Ej02Usuarios (String nombre, String ap1, String ap2) {
     	nombre = nombre.trim().toLowerCase().replace("\\s", "");
-    	String nombreCompletoApellidos = org.apache.commons.lang3.StringUtils.capitalize(nombre);
-    	return nombreCompletoApellidos;
+    	String Ej02Usuarios = org.apache.commons.lang3.StringUtils.capitalize(nombre);
+    	return Ej02Usuarios;
     }
 }
