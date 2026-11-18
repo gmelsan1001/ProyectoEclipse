@@ -1,4 +1,7 @@
 package tema03;
+
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * Clase de utilidades para trabajar con cadenas de texto
  */
@@ -35,8 +38,8 @@ public class UtilidadesCadenas {
     	String cadenaConCat = cad1 + " - " + cad2;
     	return cadenaConCat;
     }
-   
-	/**
+    
+    /**
      * Devuelve verdadero si la cadena cumple el patrón de expresión regular
      * @param cadena,  cualquier cadena
      * @param patron, expresión regular "RegEx"
@@ -48,25 +51,35 @@ public class UtilidadesCadenas {
     	return cumple;
     }
     
-    public static boolean esDigito (String num) {
-    	return testRegex(num, "\\d");
-    }
-
     /**
      * 
-     * @param nombre
-     * @param ap1
-     * @param ap2
-     * @return
+     * @param num
+     * @return testRegex
      */
-	
+
     public static String Ej02Usuarios (String nombre, String ap1, String ap2) {
     	nombre = nombre.trim().toLowerCase().replace("\\s", "");
     	String Ej02Usuarios = org.apache.commons.lang3.StringUtils.capitalize(nombre);
     	return Ej02Usuarios;
     }
+    
+    /**
+     * 
+     * @param dni
+     * @return testRegex
+     */
+    
+    public static boolean testRegexDni (String dni, String string) { 
+    	return testRegexDni(dni, "[0-9]{8}-?[a-hj-np-tv-zA-HJ-NP-TV-Z]");
+    }
 
-	 public static boolean validarDni (String dni) { 
-        return testRegex(dni, "[0-9]{8}-?[a-hj-np-tv-zA-HJ-NP-TV-Z]");
-     }
+    /**
+     * 
+     * @param telefono
+     * @return testRegex
+     */
+    
+    public static boolean testRegexTelefono (String test, String string) { 
+    	return testRegexTelefono(test, "[0-9]{8}-?[a-hj-np-tv-zA-HJ-NP-TV-Z]");
+    }
 }
