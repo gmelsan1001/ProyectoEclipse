@@ -17,5 +17,5 @@ public class pruebaConcatenaCadenas {
         System.out.println("La concatenación de las cadenas introducidas es: ");
         System.out.println(UtilidadesCadenas.concatenaConGuion(cadena1, cadena2));
 	}
-
+}
 }

@@ -20,4 +20,7 @@ public class ConteoVocalesExterno {
 	  int totalVocales = UtilidadesCadenas.cuentaVocales(frase);
 	  System.out.printf("La frase \"%s\" tiene %d vocales", frase, totalVocales);
       }
+
+}
+
 }
