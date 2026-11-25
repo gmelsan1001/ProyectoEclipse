@@ -53,7 +53,8 @@ public class UtilidadesCadenas {
 
     public static boolean esDigito (String num) {
     	return testRegex(num, "\\d");
-
+	}
+	
     /**
      * 
      * @param num
@@ -89,10 +90,12 @@ public class UtilidadesCadenas {
     	String nombreCompletoApellidos = nombre + ap1 + ap2;
     	return nombreCompletoApellidos;
     }
-}
-
-     * @param telefono
-     * @return testRegex
+	
+     /**
+     * 
+     * @param test
+     * @param string
+     * @return
      */
     
     public static boolean testRegexTelefono (String test, String string) { 
